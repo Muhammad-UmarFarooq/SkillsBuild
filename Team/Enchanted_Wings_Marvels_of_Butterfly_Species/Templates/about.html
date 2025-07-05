@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - ButterflyGaze</title>
+    <!-- <link rel="stylesheet" href="D:\\SkillsBuild\\Team\\Enchanted_Wings_Marvels_of_Butterfly_Species\\Static\\styles.css"> -->
+    <!--  If You're Using Flask, then the CSS should be loaded like this given below -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">ButterflyGaze</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>About Us</h2>
+        <p>ButterflyGaze is an AI-powered application that classifies butterfly species from images.</p>
+        <p>Our goal is to support biodiversity awareness and butterfly research through technology.</p>
+    </div>
+</body>
+</html>

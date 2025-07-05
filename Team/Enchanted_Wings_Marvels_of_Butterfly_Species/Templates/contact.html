@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - ButterflyGaze</title>
+    <!-- <link rel="stylesheet" href="Team\\Enchanted_Wings_Marvels_of_Butterfly_Species\\Static\\styles.css"> -->
+    <!--  If You're Using Flask, then the CSS should be loaded like this given below -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">ButterflyGaze</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

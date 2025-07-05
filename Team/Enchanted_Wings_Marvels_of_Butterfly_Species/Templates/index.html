@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ButterflyGaze - Home</title>
+    <!-- <link rel="stylesheet" href="Team/Enchanted_Wings_Marvels_of_Butterfly_Species/Static/styles.css"> -->
+     <!-- If You're Using Flask, then the CSS should be loaded like this  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">ButterflyGaze</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1>Welcome to <b>ButterflyGaze</b></h1>
+        <h2>BUTTERFLY SPECIES CLASSIFIER</h2>
+        <p>Discover and classify various butterfly species using AI technology!</p>
+        <a href="/predict" class="btn">Get Started</a>
+    </header>
+</body>
+</html>
